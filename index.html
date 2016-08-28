@@ -31,36 +31,10 @@
 				</section>
 				<section data-markdown>
 			    <script type="text/template">
-						1. Demo - AngryChart
-						2. About Angularjs2
+						1. About Angularjs2				
+						2. Demo - AngryChart
 						3. Conclusion
 					</script>
-				</section>
-				<section>
-					<section data-markdown>
-				    <script type="text/template">
-							# Demo - AngryChart
-						</script>
-					</section>
-					<section>
-							<h3>Angularjs2 + Chart.js</h3>
-					</section>
-					<section>
-						<pre>
-							<code style="font-size: 20pt;">
-<chart type="line">...</chart>
-							</code>
-						</pre>
-						<h1>=</h1>
-						<img src="./chart.png"/>
-					</section>
-					<section data-markdown>
-				    <script type="text/template">
-							- TypeScript
-							- Task runner - gulp
-							- Angularjs2
-						</script>
-					</section>
 				</section>
 				<section>
 					<section data-markdown>
@@ -70,13 +44,61 @@
 					</section>
 					<section data-markdown>
 				    <script type="text/template">
+							0. Knowledge
 							1. Architecture
 							2. Component, Directives, Service And NgModule
 							3. Binding
-							4. MetaData
 						</script>
 					</section>
 				</section>
+				<section>
+				<section data-markdown>
+				    <script type="text/template">
+							## Knowledge
+							1. TypeScript
+							2. TaskRunner(gulp , grunt , etc)
+						</script>
+				</section>
+				<section data-markdown>
+				    <script type="text/template">
+							## TypeScript
+							1. Prevent potential runtime issues
+							2. Provide a structuring mechanism
+							3. Align with the current and future ECMAScript proposals							
+						</script>
+				</section>
+				<section>
+					<h2>TS Compiler</h2>
+					<img src="./typescript2.png"/>
+				</section>
+				<section>
+					<img src="./typescript.png"/>
+				</section>				
+				<section>
+					<a href="https://www.typescriptlang.org/play/index.html">https://www.typescriptlang.org/play/index.html</a>
+				</section>
+				<section data-markdown>
+				    <script type="text/template">
+							## TaskRunner(gulp)
+							1. Project automation
+							2. Streams
+							3. Code over config							
+					</script>
+				</section>
+				<section>
+						<pre>
+							<code style="font-size: 15pt;">
+gulp.task('tsc', function() {
+    return gulp.src('./source/**/**.ts')
+            .pipe(ts(tsProject))           
+            .js.pipe(gulp.dest(appPath)).pipe(gulp.dest(targetAppPath));
+    });
+							</code>
+						</pre>
+					
+				</section>																				
+				</section>								
+				</section>				
 				<section>
 					<section>
 							<h2>Architecture</h2>
@@ -102,6 +124,7 @@
 					</section>
 				</section>
 				<section>
+				<section>
 						<h2>Binding</h2>
 						<ol>
 							<li>OneWay</li>
@@ -114,13 +137,39 @@
 						</ol>
 				</section>
 				<section>
-						<h2>MetaData</h2>
+					<img src="./databinding.png"/>
+				</section>					
 				</section>
+				<section>
+					<section data-markdown>
+				    <script type="text/template">
+							# Demo - AngryChart
+						</script>
+					</section>
+					<section>
+							<h3>Angularjs2 + Chart.js</h3>
+					</section>
+					<section>
+						<pre>
+							<code style="font-size: 20pt;">
+<chart type="line">...</chart>
+							</code>
+						</pre>
+						<h1>=</h1>
+						<img src="./chart.png"/>
+					</section>
+				</section>				
 				<section>
 					<section data-markdown>
 						<script type="text/template">
 							# Conclusion
 						</script>
+					</section>
+					<section>
+						<h2>Angularjs2</h2>
+						<span>☆</span><span>☆</span><span>☆</span>
+						<h2>TypeScript + gulp</h2>
+						<span>☆</span><span>☆</span><span>☆</span><span>☆</span>						
 					</section>
 				</section>
 			</div>
