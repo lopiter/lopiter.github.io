@@ -1,0 +1,214 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>Angularjs2</title>
+
+		<link rel="stylesheet" href="/presentation/css/reveal.css">
+		<link rel="stylesheet" href="/presentation/css/theme/black.css">
+
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="/presentation/lib/css/zenburn.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? '/presentation/css/print/pdf.css' : '/presentation/css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+				<section data-markdown>
+			    <script type="text/template">
+            # Angularjs2
+			    </script>
+				</section>
+				<section data-markdown>
+			    <script type="text/template">
+						0. Intro
+						1. About Angularjs2				
+						2. Demo - AngryChart
+						3. Conclusion
+					</script>
+				</section>
+				<section>
+				<section data-markdown>
+			    <script type="text/template">
+						# Intro
+					</script>
+				</section>
+				<section>
+					<h2> React VS Angularjs2
+					<img src="./react_vs_angular.jpg"/>
+				</section>
+				<section>
+					<img src="./compare.png"/>
+					<a href="http://info.meteor.com/blog/comparing-performance-of-blaze-react-angular-meteor-and-angular-2-with-meteor">http://info.meteor.com/blog/comparing-performance-of-blaze-react-angular-meteor-and-angular-2-with-meteor</a>
+				</section>																
+				</section>
+				</section>
+				<section>
+					<section data-markdown>
+				    <script type="text/template">
+							# About Angularjs2
+						</script>
+					</section>
+					<section data-markdown>
+				    <script type="text/template">
+							0. Knowledge
+							1. Architecture
+							2. Component, Directives, Service And NgModule
+							3. Binding
+						</script>
+					</section>
+				</section>
+				<section>
+				<section data-markdown>
+				    <script type="text/template">
+							## Knowledge
+							1. TypeScript
+							2. TaskRunner(gulp , grunt , etc)
+						</script>
+				</section>
+				<section data-markdown>
+				    <script type="text/template">
+							## TypeScript
+							1. Prevent potential runtime issues
+							2. Provide a structuring mechanism
+							3. Align with the current and future ECMAScript proposals							
+						</script>
+				</section>
+				<section>
+					<h2>TS Compiler</h2>
+					<img src="./typescript2.png"/>
+				</section>
+				<section>
+					<img src="./typescript.png"/>
+				</section>				
+				<section>
+					<a href="https://www.typescriptlang.org/play/index.html">https://www.typescriptlang.org/play/index.html</a>
+				</section>
+				<section data-markdown>
+				    <script type="text/template">
+							## TaskRunner(gulp)
+							1. Project automation
+							2. Streams
+							3. Code over config							
+					</script>
+				</section>
+				<section>
+						<pre>
+							<code style="font-size: 15pt;">
+gulp.task('tsc', function() {
+    return gulp.src('./source/**/**.ts')
+            .pipe(ts(tsProject))           
+            .js.pipe(gulp.dest(appPath)).pipe(gulp.dest(targetAppPath));
+    });
+							</code>
+						</pre>
+					
+				</section>																				
+				</section>								
+				</section>				
+				<section>
+					<section>
+							<h2>Architecture</h2>
+							<img src="./overview2.png">
+					</section>
+				</section>
+				<section>
+					<section>
+						<h2>Component</h2>
+						View + Controller
+					</section>
+					<section>
+						<h2>Directives</h2>
+						Template + @
+					</section>
+					<section>
+						<h2>Service</h2>
+						Component + @
+					</section>
+					<section>
+						<h2>NgModule</h2>
+						Component + Directives + Service
+					</section>
+				</section>
+				<section>
+				<section>
+						<h2>Binding</h2>
+						<ol>
+							<li>OneWay</li>
+							<ul>
+								<li>interpolation</li>
+								<li>property binding</li>
+								<li>event binding</li>
+							</ul>
+							<li>TwoWay</li>
+						</ol>
+				</section>
+				<section>
+					<img src="./databinding.png"/>
+				</section>					
+				</section>
+				<section>
+					<section data-markdown>
+				    <script type="text/template">
+							# Demo - AngryChart
+						</script>
+					</section>
+					<section>
+							<h3>Angularjs2 + Chart.js</h3>
+					</section>
+					<section>
+						<pre>
+							<code style="font-size: 20pt;">
+<chart type="line">...</chart>
+							</code>
+						</pre>
+						<h1>=</h1>
+						<img src="./chart.png"/>
+					</section>
+				</section>				
+				<section>
+					<section data-markdown>
+						<script type="text/template">
+							# Conclusion
+						</script>
+					</section>
+					<section>
+						<h2>Angularjs2</h2>
+						<span>☆</span><span>☆</span><span>☆</span>
+						<h2>TypeScript + gulp</h2>
+						<span>☆</span><span>☆</span><span>☆</span><span>☆</span>						
+					</section>
+				</section>
+			</div>
+		</div>
+
+		<script src="/presentation/lib/js/head.min.js"></script>
+		<script src="/presentation/js/reveal.js"></script>
+
+		<script>
+			// More info https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				history: true,
+				width : 960,
+
+				// More info https://github.com/hakimel/reveal.js#dependencies
+				dependencies: [
+					{ src: '/presentation/plugin/markdown/marked.js' },
+					{ src: '/presentation/plugin/markdown/markdown.js' },
+					{ src: '/presentation/plugin/notes/notes.js', async: true },
+					{ src: '/presentation/plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
+				]
+			});
+		</script>
+	</body>
+</html>
