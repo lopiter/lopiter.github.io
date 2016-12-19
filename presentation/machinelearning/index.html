@@ -26,169 +26,250 @@
 			<div class="slides">
 				<section data-markdown>
 			    <script type="text/template">
-            # Angularjs2
+            # Machine Learning
 			    </script>
 				</section>
 				<section data-markdown>
 			    <script type="text/template">
 						0. Intro
-						1. About Angularjs2				
-						2. Demo - AngryChart
-						3. Conclusion
+						1. ML VS EXPLICIT
+						2. Linear regression				
+						3. Tensorflow
+						4. Conclusion
 					</script>
 				</section>
 				<section>
 				<section data-markdown>
 			    <script type="text/template">
 						# Intro
-					</script>
+				</script>
 				</section>
 				<section>
-					<h2> React VS Angularjs2
-					<img src="./react_vs_angular.jpg"/>
-				</section>
+					<iframe width="560" height="315" src="https://www.youtube.com/embed/NrmMk1Myrxc" frameborder="0" allowfullscreen></iframe>				</section>
 				<section>
-					<img src="./compare.png"/>
-					<a href="http://info.meteor.com/blog/comparing-performance-of-blaze-react-angular-meteor-and-angular-2-with-meteor">http://info.meteor.com/blog/comparing-performance-of-blaze-react-angular-meteor-and-angular-2-with-meteor</a>
+					<img src="./handwriting.jpeg"/>
+					<img src="./handwriting2.jpeg"/>
+					<img src="./handwriting3.jpeg"/>
 				</section>																
 				</section>
 				</section>
 				<section>
 					<section data-markdown>
 				    <script type="text/template">
-							# About Angularjs2
+							# ML VS EXPLICIT
 						</script>
 					</section>
 					<section data-markdown>
 				    <script type="text/template">
-							0. Knowledge
-							1. Architecture
-							2. Component, Directives, Service And NgModule
-							3. Binding
+							Machine learning is the subfield of computer science that "gives computers the ability to learn without being explicitly programmed"
+
+							(Arthur Samuel, 1959)
+
+							https://en.wikipedia.org/wiki/Machine_learning
 						</script>
-					</section>
-				</section>
-				<section>
-				<section data-markdown>
-				    <script type="text/template">
-							## Knowledge
-							1. TypeScript
-							2. TaskRunner(gulp , grunt , etc)
-						</script>
-				</section>
-				<section data-markdown>
-				    <script type="text/template">
-							## TypeScript
-							1. Prevent potential runtime issues
-							2. Provide a structuring mechanism
-							3. Align with the current and future ECMAScript proposals							
-						</script>
-				</section>
-				<section>
-					<h2>TS Compiler</h2>
-					<img src="./typescript2.png"/>
-				</section>
-				<section>
-					<img src="./typescript.png"/>
-				</section>				
-				<section>
-					<a href="https://www.typescriptlang.org/play/index.html">https://www.typescriptlang.org/play/index.html</a>
-				</section>
-				<section data-markdown>
-				    <script type="text/template">
-							## TaskRunner(gulp)
-							1. Project automation
-							2. Streams
-							3. Code over config							
-					</script>
-				</section>
-				<section>
-						<pre>
-							<code style="font-size: 15pt;">
-gulp.task('tsc', function() {
-    return gulp.src('./source/**/**.ts')
-            .pipe(ts(tsProject))           
-            .js.pipe(gulp.dest(appPath)).pipe(gulp.dest(targetAppPath));
-    });
-							</code>
-						</pre>
-					
-				</section>																				
-				</section>								
-				</section>				
-				<section>
-					<section>
-							<h2>Architecture</h2>
-							<img src="./overview2.png">
-					</section>
-				</section>
-				<section>
-					<section>
-						<h2>Component</h2>
-						View + Controller
-					</section>
-					<section>
-						<h2>Directives</h2>
-						Template + @
-					</section>
-					<section>
-						<h2>Service</h2>
-						Component + @
-					</section>
-					<section>
-						<h2>NgModule</h2>
-						Component + Directives + Service
-					</section>
-				</section>
-				<section>
-				<section>
-						<h2>Binding</h2>
-						<ol>
-							<li>OneWay</li>
-							<ul>
-								<li>interpolation</li>
-								<li>property binding</li>
-								<li>event binding</li>
-							</ul>
-							<li>TwoWay</li>
-						</ol>
-				</section>
-				<section>
-					<img src="./databinding.png"/>
-				</section>					
-				</section>
-				<section>
-					<section data-markdown>
-				    <script type="text/template">
-							# Demo - AngryChart
-						</script>
-					</section>
-					<section>
-							<h3>Angularjs2 + Chart.js</h3>
-					</section>
-					<section>
-						<pre>
-							<code style="font-size: 20pt;">
-<chart type="line">...</chart>
-							</code>
-						</pre>
-						<h1>=</h1>
-						<img src="./chart.png"/>
-					</section>
-				</section>				
-				<section>
+					</section>					
 					<section data-markdown>
 						<script type="text/template">
-							# Conclusion
+						![](./distance_price.png)
+
+						HOW TO SOLVE THIS PROBLEM
 						</script>
 					</section>
-					<section>
-						<h2>Angularjs2</h2>
-						<span>☆</span><span>☆</span><span>☆</span>
-						<h2>TypeScript + gulp</h2>
-						<span>☆</span><span>☆</span><span>☆</span><span>☆</span>						
+					<section data-markdown>
+				    <script type="text/template">
+					 ![](./anwser.png)
+					 
+					 Y = WX + B
+					 
+					 EXPLICT : YOU'RE JUST COMPUTER. JUST CACULATE!
+
+					 ML : YOU'RE SO SMART. FIND IT BY YOUR SELF!
+					</script>
 					</section>
+					<section>
+						<img src="./how.png"/>
+					</section>
+					<section data-markdown>
+				    <script type="text/template">
+					 EXPLICT : ONE SHOT ONE KILL!
+
+					 ML : I COULD MAKE MISTAKE. 
+					 
+					   BUT, I CAN DO IT TOMORROW.
+					</script>										
+					</section>
+				</section>	
+				<section>
+					<section data-markdown>
+				    <script type="text/template">
+							# Linear regression
+						</script>
+					</section>
+					<section data-markdown>
+				    <script type="text/template">
+					종속 변수 y와 한 개 이상의 독립 변수 (또는 설명 변수) X와의
+					
+					선형 상관 관계를 모델링하는 회귀분석 기법이다.
+					</script>
+					</section>
+					<section data-markdown>
+				    <script type="text/template">
+					선형 회귀는 선형 예측 함수를 사용해 회귀식을 모델링하며, 
+					
+					알려지지 않은 파라미터는 데이터로부터 추정한다.
+					
+					이렇게 만들어진 회귀식을 선형 모델이라고 한다.
+
+					???
+					
+					https://ko.wikipedia.org/wiki/선형_회귀
+					</script>					
+					</section>
+					<section data-markdown>
+				    <script type="text/template">
+					# Y = WX + B
+					JUST FIND W & B
+
+					HOW??
+					</script>
+					</section>
+					<section data-markdown>
+				    <script type="text/template">
+					SET RANDOM VALUE TO X & B
+
+					(Are you kidding me?)
+
+					![](./step_1.png)
+
+					w = 30.0606308, b = 20.1068325
+					</script>
+					</section>	
+					<section data-markdown>
+				    <script type="text/template">
+					WHAT ARE YOU DOING?
+
+					![](./step_2.png)
+
+					w = 0.08535606, b = 99.69112396
+					</script>
+					</section>
+					<section data-markdown>
+				    <script type="text/template">
+					!
+
+					![](./step_3.png)
+
+					w = -0.07096078, b = 99.95159149
+					</script>
+					</section>
+					<section data-markdown>
+				    <script type="text/template">
+					!!!!!!
+
+					![](./step_4.png)
+
+					w = -0.1012769, b = 100.00209808
+					</script>
+					</section>
+					<section data-markdown>
+				    <script type="text/template">
+					HOW??
+
+					- Cost
+					- Gradient descent
+
+					</script>
+					</section>
+					<section data-markdown>
+				    <script type="text/template">
+					# Cost
+					CostFunction
+
+					![](./cost.png)
+
+					Our Goal is minimize CostFunction Value
+
+					(Bye , I will go home)
+					</script>
+					</section>
+					<section data-markdown>
+				    <script type="text/template">
+					# Gradient Descent
+					Gradient Descent update rule
+
+					![](./descent.png)
+
+					(Bye , I should go home)
+					</script>
+					
+					</section>
+					<section >
+					More Parameters
+					<img src="./cost_graph.png"/>
+					</section>					
+					<section data-markdown>
+				    <script type="text/template">
+					![](./congratulations.png)
+										
+					Congratulation!!
+
+					We Create Model
+
+					Just coding it
+
+					</script>
+					</section>																																												
+																															
 				</section>
+				<section>
+				<section data-markdown>
+				    <script type="text/template">
+							# TensorFlow
+						</script>
+				</section>
+				</section>	
+				<section>
+				<section data-markdown>
+				    <script type="text/template">
+							# Conclusion
+					</script>
+				</section>
+				<section data-markdown>
+				    <script type="text/template">
+						![](./java.png)
+
+						I LOVE JAVA	
+					</script>
+				</section>	
+				<section data-markdown>
+				    <script type="text/template">
+						![](./hard.jpg)
+						
+						SO HARD	
+					</script>
+				</section>
+				<section data-markdown>
+				    <script type="text/template">
+						![](./with.png)
+						
+						GET THE ONEPIECE TOGETHER
+					</script>
+				</section>
+					<section data-markdown>
+				    <script type="text/template">
+					# Good Sites
+					- 모두를 위한 딥러닝
+					(https://hunkim.github.io/ml/)
+
+					- Coursera Machine Learning
+					(https://www.coursera.org/learn/machine-learning) 
+
+					</script>
+					
+					</section>												
+												
+				</section>	
+				</section>				
 			</div>
 		</div>
 
