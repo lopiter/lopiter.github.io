@@ -5,7 +5,7 @@ url: "https://lopiter.github.io"
 
 # Secondary Parameters
 baseurl: ""
-header-img: img/home-bg.jpg
+header-img: img/home.jpg
 headercolor: "#FFFFFF"
 ##logo: /project-pages/img/logos/Project-Pages-New-Logo-Inverted.png
 
@@ -33,7 +33,7 @@ defaults:
       type: "pages"
     values:
       layout: "project"
-      header-img: "img/home-bg.jpg"
+      header-img: "img/home.jpg"
 
 # Prose Settings
 prose:
