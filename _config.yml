@@ -1,7 +1,7 @@
 # Site settings
 title: lopiter's blog
 description: "lopiter's dev story"
-url: "https://projectpages.github.io"
+url: "https://lopiter.github.io"
 
 # Secondary Parameters
 baseurl: ""
@@ -10,7 +10,7 @@ headercolor: "#FFFFFF"
 ##logo: /project-pages/img/logos/Project-Pages-New-Logo-Inverted.png
 
 # Tertiary Parameters
-github_username:  projectpages
+github_username:  lopiter
 project_repository: project-pages
 disqus_shortname: project-pages
 g-analytics: UA-75881392-1
